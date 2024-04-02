@@ -1,13 +1,22 @@
+<!--
+    Emmet - html/css extensions https://docs.emmet.io/ 
+    in vscode by default
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Tatsiana CV</title>
 </head>
 <body>
     <table cellspacing="15">
         <tr>
-        <td><img src="фото 1 CV.jpeg" width="200" alt="фото"></td>
+            <!-- Лучше газвания статичных документов писать без пробела и латиницой, чтобы не возникло проблем со считыванием спец символов в браузере
+            так как пробел в интерпритации браузерной строки запроса - это спецсимвол
+         -->
+        <td><img src="./assets/images/photo-1CV.jpeg" width="200" alt="фото"></td>
         <td>
         <h1>Татьяна Евтуховская</h1>
             <p>Начинающий <strong>фронтенд - разработчик</strong></p>
@@ -53,17 +62,17 @@
 <h2>Связаться со мной</h2>
 <form action="/">
     <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Начните вводить текст...">
+    <input type="text" id="name" placeholder="Начните вводить текст..." name="name">
     <br>
     <label for="email">Ваш email:</label>
-    <input type="email" id="email" placeholder="Начните вводить Email...">
+    <input type="text" id="email" placeholder="Начните вводить Email..." name="email">
     <br>
     <label for="text">Ваше сообщение:</label>
     <br>
-    <textarea name="" id="text" cols="15" rows="5"></textarea>
+    <textarea name="message" id="text" cols="15" rows="5"></textarea>
     <br>
     <input type="submit" value="Связаться">
 </form>
-
+<script src="./assets/scripts/script.js"></script>
 </body>
 </html>
